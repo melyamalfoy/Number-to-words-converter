@@ -10,7 +10,7 @@ function convertNumber() {
   
     if (userInput) {
       const  strippedUserInput= userInput.replace(/[.,]/g, ""); // Verwijder punten en komma's uit de invoer
-      const result = numberToWord(parseInt(strippedUserInput, 10)); //zet de string om naar een getal
+      const result = numberToWord(parseInt(strippedUserInput, 10)); //zet de string om naar een int
       resultField.innerHTML = result;
     } else {
         resultField.innerHTML = "Voer een getal in cijfers (bv. 13 of 433)";
