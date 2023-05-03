@@ -47,6 +47,13 @@ function numberToWord(number) {
       } 
       
       // Als het getal tussen 20 en 100 ligt, retourneer dan het woord voor het tiental gevolgd door het woord voor het eenheidscijfer.
+      // vb 37 
+      // if tussen 20 en 100 
+      // dan dertig + zeven dertig remainder 7
+      // eenheden 7 = zeven
+      // zeven + en + "
+      //tientallen 3 = dertig / 10 = 3 (index 3 in tientallen array)
+      // dertig + zeven = zevenendertig
       if (number >= 20 && number < 100) {
         return (number % 10 > 0 ? eenheden[number % 10] + "en" : "") + tientallen[Math.floor(number / 10)]; 
       }
